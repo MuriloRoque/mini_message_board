@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1 Please, provide the required information
+  form(method='POST', action='/new')
+    label Your name:
+    input(type='text', name='user')
+    label Message:
+    input(type='textarea', name='text')
+    button(type='submit') Save
