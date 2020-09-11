@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form(method='POST', action='/new')
+    div(class="form-group")
+      label(for="user") Your name:
+      input(type="text", name='user', class="form-control")
+    div(class="form-group")
+      label(for="text") Message:
+      input(type="textarea", name='text', class="form-control")
+    button(type='submit', class='btn btn-primary') Save
+  a(href='/', class='btn btn-primary mt-3') Back
